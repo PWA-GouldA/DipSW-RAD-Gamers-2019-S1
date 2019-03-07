@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/layout', function () {return view('layout');});
+
 // when http://domain/manufacturers is visited
 // run the index method in the ManufacturersController
 Route::get('/manufacturers', 'ManufacturersController@index');

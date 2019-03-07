@@ -14,7 +14,7 @@ class ManufacturersController extends Controller
         return view(
             'manufacturers.index', /* the view to see */
             compact('manufacturers') /* send the $manufacturers */
-            );
+        );
     }
 
     // http://DOMAIN/manufacturers/2
@@ -23,5 +23,8 @@ class ManufacturersController extends Controller
         $manufacturer = Manufacturer::findOrFail($id);
         return view('manufacturers.show', compact('manufacturer'));
     }
+
+
+
 
 }
