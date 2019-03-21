@@ -14,9 +14,11 @@ class CreateManufacturers extends Migration
     public function up()
     {
         Schema::create('manufacturers', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('name')->comment('Manufacturer name');
-            $table->string('city')->comment('Location of manufacturer');
+            $table->string('city')->comment('Manufacturer HQ City');
+            $table->string('country')->comment('Manufacturer HQ Country');
+            $table->string('website')->comment('Manufacturer Web Site URL');
             $table->timestamps();
         });
     }
