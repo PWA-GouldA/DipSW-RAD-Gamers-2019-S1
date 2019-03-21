@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\Games::class, function (Faker $faker) {
+$factory->define(App\Game::class, function (Faker $faker) {
     return [
         //
     ];

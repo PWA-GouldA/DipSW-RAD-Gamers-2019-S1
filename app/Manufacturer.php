@@ -11,8 +11,5 @@ class Manufacturer extends Model
         return $this->hasMany(Game::class);
     }
 
-    public function gameType(){
-        return $this->hasOne(GameType::class);
-    }
 
 }
