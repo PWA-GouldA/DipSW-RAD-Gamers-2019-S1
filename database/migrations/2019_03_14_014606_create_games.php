@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -13,19 +13,19 @@ class CreateGames extends Migration
      */
     public function up()
     {
-        Schema::create('Games', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('games', function (Blueprint $table) {
+            $table->bigIncrements('id');
 
-            $table->string('name',255)->comment('Title fo the game');
+            $table->string('name',255)->comment('Title of the game');
 
-            $table->smallInteger('min_age',false,true)->default(1)->comment('Minimum player age');
-            $table->smallInteger('max_age',false,true)->nullable()->comment('Maximum player age');
+            $table->unsignedSmallInteger('min_age',false,true)->default(1)->comment('Minimum player age');
+            $table->unsignedSmallInteger('max_age',false,true)->nullable()->comment('Maximum player age');
 
-            $table->smallInteger('min_players',false,true)->default(1)->comment('Minimum player age');
-            $table->smallInteger('max_players',false,true)->nullable()->comment('Maximum player age');
+            $table->unsignedSmallInteger('min_players',false,true)->default(1)->comment('Minimum player age');
+            $table->unsignedSmallInteger('max_players',false,true)->nullable()->comment('Maximum player age');
 
-            $table->integer('game_type_id',false, true)->default(0)->comment('ID from Game Types Table');
-            $table->integer('manufacturer_id',false, true)->default(0)->comment('ID from Manufacturers Table');
+            $table->bigInteger('game_type_id',false, true)->default(0)->comment('ID from Game Types Table');
+            $table->bigInteger('manufacturer_id',false, true)->default(0)->comment('ID from Manufacturers Table');
 
             $table->timestamps();
         });
@@ -38,6 +38,6 @@ class CreateGames extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Games');
+        Schema::dropIfExists('games');
     }
 }

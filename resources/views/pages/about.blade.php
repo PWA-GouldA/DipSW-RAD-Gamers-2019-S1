@@ -1,5 +1,6 @@
 @extends('layout');
-@section('title',' Gamers | About Us')
+
+@section('title', 'Gamers | About Us')
 
 @section('messages')
 
@@ -7,7 +8,7 @@
 
 @section('content')
     <section>
-    <h1>About Us</h1>
-    <p>This is the about us page content</p>
+        <h1>About Us</h1>
+        <p>This is the about us page content</p>
     </section>
 @endsection

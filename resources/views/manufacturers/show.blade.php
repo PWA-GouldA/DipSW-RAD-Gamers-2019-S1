@@ -1,6 +1,6 @@
 @extends('layout');
 
-@section('title',' Gamers | Manufacturer Detail')
+@section('title', 'Gamers | Manufacturer Detail')
 
 @section('messages')
 @endsection
@@ -50,7 +50,8 @@
                     @foreach($manufacturer->games as $aGame)
                         <li class="">
                             <a href="/games/{{ $aGame->id }}" class="row">
-                                <b class="col-1">{{ $aGame->id }}</b><span class="col">{{ $aGame->name }}</span>
+                                <b class="col-1">{{ $aGame->id }}</b>
+                                <span class="col">{{ $aGame->name }}</span>
                             </a>
                         </li>
                     @endforeach

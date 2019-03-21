@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class GameTypesSeeder extends Seeder
+class old extends Seeder
 {
     /**
      * Run the database seeds.

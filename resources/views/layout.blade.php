@@ -47,7 +47,9 @@
             <form class="form-inline">
                 <input class="form-control mr-sm-2 form-control-sm" type="text" placeholder="Search"
                        aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 btn-sm" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0 btn-sm" type="submit">
+                    Search
+                </button>
             </form>
         </div>
     </nav>

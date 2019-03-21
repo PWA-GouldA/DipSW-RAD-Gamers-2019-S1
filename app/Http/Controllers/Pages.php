@@ -9,6 +9,7 @@ class Pages extends Controller
     //
 
     public function index(){
+        //         FOLDER . PAGE VIEW TO SHOW
         return view('pages.welcome');
     }
     public function about(){

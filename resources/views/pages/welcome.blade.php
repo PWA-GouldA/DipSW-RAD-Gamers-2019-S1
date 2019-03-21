@@ -1,6 +1,6 @@
 @extends('layout');
 
-@section('title',' Gamers | Home')
+@section('title', 'Gamers | Home')
 
 @section('messages')
     <section class="jumbotron">
@@ -11,7 +11,7 @@
 
 @section('content')
     <section>
-    <h1>Hello!</h1>
-    <p>This is the home page content</p>
+        <h1>Hello!</h1>
+        <p>This is the home page content</p>
     </section>
 @endsection
