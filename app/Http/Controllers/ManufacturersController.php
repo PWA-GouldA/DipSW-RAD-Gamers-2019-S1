@@ -24,6 +24,59 @@ class ManufacturersController extends Controller
         return view('manufacturers.show', compact('manufacturer'));
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('manufacturers.create');
+    }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Manufacturer $Manufacturer
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Manufacturer $Manufacturer)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Manufacturer $Manufacturer
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Manufacturer $Manufacturer)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Manufacturer $Manufacturer
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Manufacturer $Manufacturer)
+    {
+        //
+    }
 
 }
