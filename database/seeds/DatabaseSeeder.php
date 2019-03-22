@@ -46,14 +46,14 @@ class DatabaseSeeder extends Seeder
         $this->call(CitySeederP::class);
         $this->call(CitySeederQ::class);
         $this->call(CitySeederR::class);
-        $this->call(CitySeederS::class);
-        $this->call(CitySeederT::class);
-        $this->call(CitySeederU::class);
-        $this->call(CitySeederV::class);
-        $this->call(CitySeederW::class);
-        $this->call(CitySeederX::class);
-        $this->call(CitySeederY::class);
-        $this->call(CitySeederZ::class);
-
+//        $this->call(CitySeederS::class);
+//        $this->call(CitySeederT::class);
+//        $this->call(CitySeederU::class);
+//        $this->call(CitySeederV::class);
+//        $this->call(CitySeederW::class);
+//        $this->call(CitySeederX::class);
+//        $this->call(CitySeederY::class);
+//        $this->call(CitySeederZ::class);
+        
     }
 }
