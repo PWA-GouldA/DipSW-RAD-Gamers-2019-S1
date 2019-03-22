@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class old extends Seeder
+class GameTypes extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,32 +13,32 @@ class old extends Seeder
     {
         //
         DB::table('game_types')->insert([
-            'game_type' => 'Board',
+            'name' => 'Board',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ]);
         DB::table('game_types')->insert([
-            'game_type' => 'Dice',
+            'name' => 'Dice',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ]);
         DB::table('game_types')->insert([
-            'game_type' => 'Sport',
+            'name' => 'Sport',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ]);
         DB::table('game_types')->insert([
-            'game_type' => 'Video',
+            'name' => 'Video',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ]);
         DB::table('game_types')->insert([
-            'game_type' => 'Card',
+            'name' => 'Card',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ]);
         DB::table('game_types')->insert([
-            'game_type' => 'Other',
+            'name' => 'Other',
             'created_at' => DB::raw('CURRENT_TIMESTAMP'),
             'updated_at' => DB::raw('CURRENT_TIMESTAMP'),
         ]);

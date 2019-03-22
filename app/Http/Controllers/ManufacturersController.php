@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Manufacturer;
 
+use Khsing\World\World;
+
 class ManufacturersController extends Controller
 {
     public function index()
@@ -31,7 +33,9 @@ class ManufacturersController extends Controller
      */
     public function create()
     {
-        return view('manufacturers.create');
+        $countries = World::Countries();
+
+        return view('manufacturers.create', compact('countries'));
     }
 
     /**
